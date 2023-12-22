@@ -8,6 +8,6 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "¡Hola Mundo!"; // Esta cadena se mostrará cuando accedas a la raíz ("/")
+        return "¡Hola Mundo!";
     }
 }

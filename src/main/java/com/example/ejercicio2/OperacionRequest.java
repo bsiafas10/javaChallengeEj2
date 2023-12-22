@@ -20,7 +20,4 @@ public class OperacionRequest {
 	public void setImporte(BigDecimal importe) {
 		this.importe = importe;
 	}
-
-
-    // Getters y setters
 }
