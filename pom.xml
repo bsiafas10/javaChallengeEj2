@@ -46,14 +46,14 @@
 				</configuration>
 			</plugin>
 			<plugin>
-            	<groupId>org.apache.maven.plugins</groupId>
-            	<artifactId>maven-compiler-plugin</artifactId>
-           		<version>3.8.1</version> <!-- Cambia a la versión compatible con tu configuración -->
-            	<configuration>
-                	<source>1.8</source>
-                	<target>1.8</target>
-            	</configuration>
-        	</plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version> <!-- O la versión compatible con tu configuración -->
+				<configuration>
+					<source>17</source>
+					<target>17</target>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
