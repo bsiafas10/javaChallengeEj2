@@ -5,14 +5,10 @@ public class TasaResponse {
     private String tasa;
     private String importeFinal;
 
-
-    // Constructor con parámetros
     public TasaResponse(String tasa, String importeFinal) {
         this.tasa = tasa;
         this.importeFinal = importeFinal;
     }    
-
-    // Getters y setters
 
     public String getTasa() {
         return tasa;
