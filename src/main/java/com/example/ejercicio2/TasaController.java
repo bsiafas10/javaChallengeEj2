@@ -16,7 +16,7 @@ public class TasaController {
     public ResponseEntity<TasaResponse> calcularTasa(@RequestBody OperacionRequest request) {
         if (request.getMarca() == null || request.getImporte() == null) {
             return ResponseEntity.badRequest()
-                    .body(new TasaResponse("La solicitud debe incluir la marca de la tarjeta y el importe de la operación.", null));
+                    .body(new TasaResponse("La solicitud debe incluir la marca de la tarjeta y el importe de la operación.", "0"));
         }
     
         try {
@@ -31,7 +31,7 @@ public class TasaController {
             return ResponseEntity.ok(response);
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest()
-                    .body(new TasaResponse("Error: " + e.getMessage(), null));
+                    .body(new TasaResponse("Error: " + e.getMessage(), "0"));
         }
     }
     
